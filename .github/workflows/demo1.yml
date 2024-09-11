@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - main # Note - this refers to the target branch of the PR, not the source branch
       - 'dev-*' # dev-new, dev-this-is-new, NOT dev-/new
       - 'feature/**' # feature/new, feature/new/button
     paths-ignore: 
